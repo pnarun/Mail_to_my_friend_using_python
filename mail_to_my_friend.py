@@ -15,7 +15,7 @@ subject = input("Enter the Subject for the mail: ")
 
 #  Thanks and Regards.
 #  Arun P N'''
-print("Press 'Ctrl+Z' and 'Enter' key after the end of body of the mail.")
+print("Press 'Ctrl+Z'-for windows and 'Ctrl+D'-for other OS and 'Enter' key after the end of body of the mail.")
 print("Enter the content for the body of the mail.")
 msg = sys.stdin.readlines()
 body = ""
