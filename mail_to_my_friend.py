@@ -1,5 +1,5 @@
 import smtplib
-import sys
+import sys, getpass
 from email.mime.text import MIMEText
 
 print("Python program to send a mail to your friend.")
@@ -28,7 +28,8 @@ msg['Subject'] = subject
 server = smtplib.SMTP('smtp.gmail.com',587)
 server.starttls()
 # password = "Sender mail Password."
-password = input("Enter your password: ")
+# password = input("Enter your password: ")
+password = getpass.getpass(prompt = 'Enter your password: ')
 server.login(fromaddr,password)
 server.send_message(msg)
 print("Mail sent successfully...")
